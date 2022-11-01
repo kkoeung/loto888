@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("./images/back-01.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
+/* slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* experience */
+.experience{
+    width: 100%;
+}
+.experience .experience-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: auto;
+    border-radius: .8em;
+    color: #858585;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+.experience .experience-item:hover{
+    color: #fff;
+}
+.experience .experience-content{
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-align: center;
+    width: 256px;
+    height: 318px;
+    border-radius: 1em;
+    background: linear-gradient(50deg, #2a5a3b, #1e4886);
+    overflow: hidden;
+}
+.experience .experience-content::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 35px;
+    top: 0;
+    right: 35px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, #00ff59, #02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+}
+.experience .experience-content:hover::before{
+    animation: cardEffect 1.9s;
+}
+@keyframes cardEffect {
+    100% {
+        transform: rotate(-45deg) translate(0,450px);
+    }
+}
+
+/* service */
+.service{
+    width: 100%;
+}
+.service .service-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: auto;
+    border-radius: .8em;
+    color: #858585;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+.service .service-item:hover{
+    color: #fff;
+}
+.service .service-content{
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-align: center;
+    width: 256px;
+    height: 323px;
+    border-radius: 1em;
+    background: linear-gradient(50deg, #2a5a3b, #1e4886);
+    overflow: hidden;
+}
+.service .service-content::before{
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 35px;
+    top: 0;
+    right: 35px;
+    transition: 1.9s;
+    background: linear-gradient(50deg, #00ff59, #02b3ff);
+    transform: rotate(-45deg) translate(0, -100px);
+}
+.service .service-content:hover::before{
+    animation: cardEffect 1.9s;
+}
+@keyframes cardEffect {
+    100% {
+        transform: rotate(-45deg) translate(0,450px);
+    }
+}
+
+/* responsive */
+@media (min-width: 320px) and (max-width: 481px){
+    body {
+        background: url("./images/10018.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
+    }
+    .container .bg-web{
+        width: 100%;
+    }
+    /* header */
+    .container .head{
+        padding: 10px;
+    }
+    .container .head .head-logo{
+        width: 100%;
+    }
+    .container .head .logo-image{
+        width: 70%;
+    }
+    /* menu */
+    .menu .menu-item{
+        display: flex;
+        flex-direction: column;
+    }
+    /* banner */
+    .container .banner{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .container .swiper{
+        width: 100%;
+    }
+    .container .banner-item2{
+        width: 100%;
+    }
+    /* experience */
+    .container .experience-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .experience-item{
+        width: 98%;
+        height: 98%;
+    }
+
+    /* services */
+    .container .service-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .service-item{
+        width: 98%;
+        height: 98%;
+    }
+    /* footer */
+    .footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-item{
+        width: 80%;
+    }
+    .container .menu-content{
+        display: none;
+    }
+    .container .head-contact{
+        display: none;
+    }
+    .container .search{
+        display: none;
+    }
+    .container .close-button{
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    body {
+        background: url("./images/10018.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
+    }
+    .container .bg-web{
+        width: 100%;
+    }
+    /* logo */
+    .container .head .logo-image{
+        width: 50%!important;
+    }
+    /* header */
+    .container .head{
+        padding: 10px;
+    }
+    .container .head .head-logo{
+        width: 100%;
+    }
+    .container .head .logo-image{
+        width: 70%;
+    }
+    /* menu */
+    .menu .menu-item{
+        display: flex;
+        flex-direction: column;
+    }
+    /* banner */
+    .container .banner{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .container .swiper{
+        width: 100%;
+    }
+    .container .banner-item2{
+        width: 100%;
+    }
+    .container .banner-item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* experience */
+    .container .experience-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .experience-item{
+        width: 98%;
+        height: 98%;
+    }
+
+    /* services */
+    .container .service-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .service-item{
+        width: 98%;
+        height: 98%;
+    }
+    /* footer */
+    .footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-item{
+        width: 80%;
+    }
+    .container .menu-content{
+        display: none;
+    }
+    .container .head-contact{
+        display: none;
+    }
+    .container .search{
+        display: none;
+    }
+    .container .close-button{
+        display: block;
+    }
+}
